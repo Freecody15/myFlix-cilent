@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Form, Button, Card, CardGroup, Container, Col, Row } from 'react-bootstrap';
+
+import './movie-view.scss';
 
 export class MovieView extends React.Component {
-
     keypressCallback(event) {
         console.log(event.key);
     }
@@ -14,7 +17,6 @@ export class MovieView extends React.Component {
         document.removeEventListener('keypress', this.keypressCallback);
     }
 
-
     render() {
         const { movie, onBackClick } = this.props;
 
@@ -24,16 +26,32 @@ export class MovieView extends React.Component {
                     <img src={movie.ImagePath} />
                 </div>
                 <div className="movie-title">
-                    <span className="label">Title: </span>
+                    <span className="title">Title: </span>
                     <span className="value">{movie.Title}</span>
                 </div>
                 <div className="movie-description">
-                    <span className="label">Description: </span>
+                    <span className="description">Description: </span>
                     <span className="value">{movie.Description}</span>
+                </div>
+                <div className="movie-genre">
+                    <span className="genre">Genre: </span>
+                    <span className="value">{movie.Genre.Name}</span>
+                </div>
+                <div className="genre-description">
+                    <span className="genre">Description: </span>
+                    <span className="value">{movie.Genre.Description}</span>
+                </div>
+                <div className="movie-director">
+                    <span className="director">Director: </span>
+                    <span className="value">{movie.Director.Name}</span>
+                </div>
+                <div className="director-bio">
+                    <span className="director">Bio: </span>
+                    <span className="value">{movie.Director.Bio}</span>
                 </div>
                 <button onClick={() => { onBackClick(null); }}>Back</button>
 
             </div>
         );
     }
-}
+} 4
