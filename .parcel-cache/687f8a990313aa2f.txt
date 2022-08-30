@@ -56,7 +56,7 @@
 120C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\dom-helpers\esm\getScrollAccessor.d.ts133062819098543390 0
 118C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\modules\es6.function.name.js133062819135393396 0
 103C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\react-bootstrap\Alert133062819112513407 1
-73C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist133063042183630604 1
+73C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist133063052184456777 1
 115C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\modules\es6.array.from.js133062819134903399 0
 115C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\uncontrollable\lib\cjs\index.d.ts133062819056093396 0
 128C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\caniuse-lite\data\features\childnode-remove.js133062538704644196 0
@@ -173,7 +173,7 @@
 123C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\highlight.js\styles\isbl-editor-light.css133062538687464224 0
 106C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\array-union\package.json133062538626734200 0
 132C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\caniuse-lite\data\features\private-class-fields.js133062538739044186 0
-109C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\src\components\movie-card\movie-card.jsx133063032962427400 0
+109C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\src\components\movie-card\movie-card.jsx133063048197741975 0
 101C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\safe-buffer\LICENSE133062538626284196 0
 116C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\@restart\hooks\useMutationObserver133062819085043393 1
 125C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\lmdb\node_modules\node-addon-api\LICENSE.md133062538665744193 0
@@ -243,7 +243,7 @@
 112C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\fn\object\is-object.js133062819080993408 0
 105C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\es6\weak-map.js133062819070193402 0
 105C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\fastest-levenshtein\esm133062538656504197 1
-107C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\src\components\main-view\main-view.jsx133063041825249654 0
+107C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\src\components\main-view\main-view.jsx133063044712977481 0
 121C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\library\fn\number\is-integer.js133062819116703392 0
 85C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\use133062538637214211 1
 108C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\@parcel\graph\src\types.js133062538662584196 0
@@ -6302,7 +6302,7 @@
 130C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\@restart\hooks\cjs\useThrottledEventHandler.d.ts133062819098623399 0
 98C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\@parcel\core\lib133062538718634189 1
 123C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\library\modules\$.to-primitive.js133062819123443394 0
-91C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.6701a6e1.js133063042181370613 0
+91C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.6701a6e1.js133063052182416606 0
 116C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\library\modules\$.typed.js133062819123043395 0
 114C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\library\modules\$.wks.js133062819122743396 0
 121C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\core-js\library\modules\es6.weak-map.js133062819130963388 0
@@ -9123,7 +9123,7 @@
 97C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\.bin\semver.cmd133062538746824195 0
 92C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\.bin\which133062538747044190 0
 96C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\node_modules\.bin\which.cmd133062538747044190 0
-95C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.6701a6e1.js.map133063042183580599 0
+95C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.6701a6e1.js.map133063052184386585 0
 92C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.caa67093.css133063042180740601 0
 96C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.caa67093.css.map133063042182380612 0
 84C:\Users\dakot\OneDrive\Desktop\Document's\Programming\myFlix-cilent\dist\index.html133063042180730598 0
