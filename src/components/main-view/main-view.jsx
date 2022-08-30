@@ -3,6 +3,7 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { LoginView } from '../login-view/login-view.jsx';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';
@@ -19,27 +20,53 @@ export class MainView extends React.Component {
         };
     }
 
-    componentDidMount() {
-        axios.get('https://dp-movie-api.herokuapp.com/movies')
+    getMovies(token) {
+        axios.get('https://dp-movie-api.herokuapp.com/movies', {
+            headers: { Authorization: `Bearer${token}` }
+        })
             .then(response => {
+                // Assign the result to the state
                 this.setState({
                     movies: response.data
                 });
             })
-            .catch(error => {
+            .catch(function (error) {
                 console.log(error);
             });
+    }
+
+    componentDidMount() {
+        let accessToken = localStorage.getItem('token');
+        if (accessToken !== null) {
+            this.setState({
+                user: localStorage.getItem('user')
+            });
+            this.getMovies(accessToken);
+        }
+    }
+
+    onLoggedIn(authData) {
+        console.log(authData);
+        this.setState({
+            user: authData.user.Username
+        });
+
+        localStorage.setItem('token', authData.token);
+        localStorage.setItem('user', authData.user.Username);
+        this.getMovies(authData.token);
+    }
+    // to log out 
+    onLoggedOut() {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        this.setState({
+            user: null
+        });
     }
 
     setSelectedMovie(movie) {
         this.setState({
             selectedMovie: movie
-        });
-    }
-
-    onLoggedIn(user) {
-        this.setState({
-            user
         });
     }
 
@@ -50,29 +77,34 @@ export class MainView extends React.Component {
     }
 
     render() {
-        const { movies, selectedMovie, user, registered } = this.state;
+        const { movies, user } = this.state;
+        <button onClick={() => { this.onLoggedOut() }}>Logout</button> // log out button
 
-        if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
-
-        if (!registered) return <RegistrationView onRegistration={(register) => this.onRegistration(register)} />;
-
+        if (!user) return <Row>
+            <Col>
+                <LoginView onLoggedIn={user => this.onLoggedIn(user)} />
+            </Col>
+        </Row>
         if (movies.length === 0) return <div className="main-view" />;
 
         return (
-            <div className="main-view">
-                {selectedMovie
-                    ? (
-                        <Row className="justify-content-md-center">
-                            <Col md={8}>
-                                <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }} />
+            <Router>
+                <Row className="main-view justify-content-md-center">
+                    <Route exact path="/" render={() => {
+                        return movies.map(m => (
+                            <Col md={3} key={m._id}>
+                                <MovieCard movie={m} />
                             </Col>
-                        </Row>
-                    )
-                    : movies.map(movie => (
-                        <MovieCard key={movie._id} movie={movie} onMovieClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }} />
-                    ))
-                }
-            </div>
+                        ))
+                    }} />
+                    <Route path="/movies/:movieId" render={({ match }) => {
+                        return <Col md={8}>
+                            <MovieView movie={movies.find(m => m._id === match.params.movieId)} />
+                        </Col>
+                    }} />
+
+                </Row>
+            </Router>
         );
     }
 }
