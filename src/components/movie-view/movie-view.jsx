@@ -1,8 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form, Button, Card, CardGroup, Container, Col, Row } from 'react-bootstrap';
+import { Button, Card, CardGroup, Container, Col, Row } from 'react-bootstrap';
 
 import './movie-view.scss';
+
+<Link to={`/directors/${movie.Director.Name}`}>
+    <Button variant="link">Director</Button>
+</Link>
+
+<Link to={`/genres/${movie.Genre.Name}`}>
+    <Button variant="link">Genre</Button>
+</Link>
 
 export class MovieView extends React.Component {
     keypressCallback(event) {
