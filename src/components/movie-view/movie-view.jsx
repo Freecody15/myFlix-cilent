@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form, Button, Card, CardGroup, Container, Col, Row } from 'react-bootstrap';
+import { Button, Card, CardGroup, } from 'react-bootstrap';
 
 import './movie-view.scss';
 
