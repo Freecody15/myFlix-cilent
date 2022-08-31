@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Card, Button } from 'react-bootstrap';
-
+// Import React Bootstrap Components
+import { Container, Button, Card } from "react-bootstrap";
 // Import custom SCSS
 import "./director-view.scss";
 
@@ -32,7 +32,7 @@ export class DirectorView extends React.Component {
     }
 }
 
-DirectorView.proptypes = {
+DirectorView.propTypes = {
     Director: PropTypes.shape({
         Name: PropTypes.string.isRequired,
         Bio: PropTypes.string,

@@ -3,7 +3,7 @@ import axios from "axios";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 // Import React Bootstrap Components
-import { Container, Card, Col, Row, Button, Form } from 'react-bootstrap';
+import { Container, Card, Col, Row, Button, Form, Figure } from 'react-bootstrap';
 // Import custom SCSS
 import "./profile-view.scss";
 
@@ -25,8 +25,8 @@ export class ProfileView extends React.Component {
     }
 
     onRemoveFavorite = (e, movie) => {
-        const username = localStorage.getItem("user");
-        console.log(username);
+        const Username = localStorage.getItem("user");
+        console.log(Username);
         const token = localStorage.getItem("token");
         console.log(this.props);
         axios
