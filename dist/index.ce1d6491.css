@@ -1,0 +1,158 @@
+body {
+  color: #eef0f2;
+  background-color: #191d32;
+  font-family: Pathway Gothic One, sans-serif;
+}
+
+h1 {
+  font-family: League Gothic, sans-serif;
+}
+
+@media (max-width: 797px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.login {
+  color: #191d32;
+  background-color: #eef0f2;
+  margin-top: 100px;
+}
+
+.btn, .button {
+  color: #eef0f2;
+  background-color: #336d82;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Pathway Gothic One, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity .2s;
+  display: inline-block;
+}
+
+.btn:hover, .btn:focus, .button:hover, .button:focus {
+  cursor: pointer;
+  opacity: .5;
+  background-color: #336d82;
+}
+
+.movie-card {
+  height: 100%;
+  color: #eef0f2;
+  background-color: #336d82;
+  border-radius: 15px;
+  margin-bottom: auto;
+  padding: 10px;
+}
+
+.card-img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#movie-card {
+  margin: 10px;
+}
+
+.card-title {
+  font-family: League Gothic, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.description {
+  height: 100px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.open {
+  color: #191d32;
+  background-color: #81e6d9;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Pathway Gothic One, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity .2s;
+  display: inline-block;
+}
+
+.open:hover {
+  cursor: pointer;
+  opacity: .5;
+  color: #191d32;
+  background-color: #81e6d9;
+}
+
+.movie-view {
+  background-color: #191d32;
+}
+
+img {
+  max-width: 300px;
+  max-height: 1350px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.movie-view-button {
+  color: #eef0f2;
+  background-color: #336d82;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Pathway Gothic One, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity .2s;
+  display: inline-block;
+}
+
+.movie-view-button:hover {
+  cursor: pointer;
+  opacity: .5;
+  background-color: #336d82;
+}
+
+.movie-view-title {
+  text-align: left;
+  font-family: League Gothic, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  display: block;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.movie-view__grid {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.movie-info {
+  grid-template-rows: 50px 50px 4fr;
+  display: grid;
+}
+
+@media (max-width: 700px) {
+  .movie-view__grid {
+    display: block;
+  }
+}
+
+
+
+/*# sourceMappingURL=index.ce1d6491.css.map */
